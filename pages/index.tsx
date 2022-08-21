@@ -4,9 +4,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
 import Post from "../components/Post/Post";
+import styles from "../styles/Home.module.css";
 
 const Home: NextPage = ({ posts }: any) => {
   return (

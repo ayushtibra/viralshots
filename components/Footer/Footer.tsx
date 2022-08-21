@@ -126,7 +126,9 @@ export default function Footer() {
               </a>
             </Link>
 
-            <span className="text-xl m-0 space-y-0">VIRALSHOTS</span>
+            <span className="text-xl text-[#8e2ad6] m-0 space-y-0">
+              VIRALSHOTS
+            </span>
 
             <div className="flex space-x-6 mt-4">
               {navigation.social.map((item) => (
@@ -164,7 +166,7 @@ export default function Footer() {
 
             <div className="subscribe-me">
               <Link href="/">
-                <p className="font-bold mb-4 text-center">Join Us!!</p>
+                <p className="font-bold mb-4 text-left">Join Us!!</p>
               </Link>
               <Subscribe />
               <p className="text-sm  text-left mt-2">
@@ -173,8 +175,9 @@ export default function Footer() {
                   href="https://medium.com/@aayushtibra1997"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-sm mt-4 text-center text-gray-500 hover:text-gray-900"
+                  className="text-sm mt-4 text-center text-[#8e2ad6] hover:text-gray-900"
                 >
+                  {" "}
                   Join us on Medium
                 </a>
               </p>

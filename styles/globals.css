@@ -9,7 +9,7 @@ body {
   /* margin: 0 30px; */
   /* font-family: 'Poppins'; */
   font-family: "Roboto", sans-serif;
-  background-color: #f4f8fb;
+  /* background-color: #f4f8fb; */
 }
 
 h1,
@@ -386,4 +386,131 @@ a {
   .centered {
     font-size: 5px;
   }
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: steelblue;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-back {
+  background: #f4f4f4;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-page {
+  padding: 32px 30px;
+}
+
+.post-title {
+  margin: 10px 0;
+}
+
+.post-date {
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  padding: 3px 10px;
+}
+
+.post-body h2 {
+  margin: 0 0 0.5em;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.post-body p {
+  margin: 0 0 1.5em;
+}
+
+.post-body ol {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}
+
+.post-body ul {
+  display: block;
+  list-style-type: decimal;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}
+
+.post-body ul,
+ol {
+  /* font-size: 110%; */
+  line-height: 2.3;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+.post-body pre {
+  background: #f4f4f4;
+  padding: 20px;
+  margin: 20px 0;
+  line-height: 2.3;
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+}
+
+@media (max-width: 500px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.subscribe-container {
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 94px 6px rgb(107 83 254 / 10%);
+  box-shadow: 0 0 94px 6px rgb(107 83 254 / 10%);
+  padding: 35px 0;
 }

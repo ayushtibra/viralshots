@@ -31,8 +31,6 @@ const Subscribe = () => {
       <form
         className="subscribe_form"
         onSubmit={(e) => {
-          // console.log('error', error);
-
           e.preventDefault();
           if (EmailRegex.test(email.trim())) {
             // mockSubmitEmail(email.trim())

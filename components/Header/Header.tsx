@@ -23,32 +23,27 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const solutions = [
   {
-    name: "Analytics",
+    name: "Meet our Team",
     description:
       "Get a better understanding of where your traffic is coming from.",
-    href: "#",
+    href: "team",
     icon: ChartBarIcon,
   },
   {
-    name: "Engagement",
+    name: "Contact Us",
     description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
+    href: "contact",
     icon: CursorClickIcon,
   },
   {
-    name: "Security",
+    name: "Follow Us",
     description: "Your customers' data will be safe and secure.",
-    href: "#",
+    href: "https://medium.com/@aayushtibra1997",
     icon: ShieldCheckIcon,
-  },
-  {
-    name: "Integrations",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: ViewGridIcon,
   },
 ];
 const callsToAction = [
@@ -95,8 +90,13 @@ const blogPosts = [
 // }
 
 export default function Header() {
+  const router = useRouter();
   return (
-    <Popover className="relative">
+    <Popover
+      className={`relative ${
+        router.pathname.includes("blog") ? "bg-white" : "bg-[#f4f8fb]"
+      }`}
+    >
       {/* <div
         className="absolute inset-0 shadow z-30 pointer-events-none"
         aria-hidden="true"
